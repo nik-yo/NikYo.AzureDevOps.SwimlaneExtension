@@ -1,0 +1,15 @@
+@import "~/node_modules/azure-devops-ui/Core/_platformCommon.scss";
+
+.work-item-label-container {
+  padding: 0 6px 1px 0px;
+}
+
+.work-item-label {
+  font-family: $fontFamily;
+  font-size: 12px;
+}
+
+.swimlane-dropdown {
+  margin-top: 8px;
+  margin-right: 10px;
+}

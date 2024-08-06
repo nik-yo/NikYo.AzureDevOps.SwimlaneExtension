@@ -1,0 +1,7 @@
+{
+  "id": "nikyo-swimlane-extension-dev",
+  "public": false,
+  "baseUri": "https://localhost:3000",
+  "name": "Swimlane Extension - Dev",
+  "version": "0.1.0"
+}

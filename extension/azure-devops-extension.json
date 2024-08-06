@@ -1,0 +1,44 @@
+{
+    "manifestVersion": 1,
+    "publisher": "nikki-yodo",
+    "description": "Swimlane custom work item control",
+    "categories": ["Azure Boards"],
+    "scopes":[ "vso.project", "vso.work_write" ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "content": {
+      "details": {
+        "path": "overview.md"
+      }
+    },
+    "icons": {
+      "default": "img/logo.png"
+    },
+    "contributions": [
+      {
+          "id": "swimlane-work-item-form-control",
+          "type": "ms.vss-work-web.work-item-form-control",
+          "description": "Custom control to manage swimlane",
+          "targets": [
+              "ms.vss-work-web.work-item-form"
+          ],
+          "properties": {
+              "name": "Swimlane",
+              "uri": "dist/swimlane/swimlane.html"
+          }
+      }
+    ],
+    "files": [
+        {
+            "path": "img",
+            "addressable": true
+        },
+        {
+            "path": "dist",
+            "addressable": true
+        }
+    ]
+}
