@@ -12,7 +12,13 @@ Swimlane custom work item control
 
 4. Click the inherited project, under Work item types tab, select the work item type and click on "Add custom control".
 
-5. It is best to put this control with space underneath it. Due to how the control is configured in Azure DevOps, this custom control requires around 180 px in height.
+5. If the list of swimlanes are not correct, please reload the window (see Limitations).
+
+## Limitations
+
+Since SDK.getPageContext() is not working very well, this extension will attempt to get team from route, but route is not updated when team is changed through drop down. A workaround is to reload the page.
+
+Extension is actually embedded as iframe, but that cause the control to be limited by the iframe height, so this extension will resize the iframe based on the number of swimlanes multiplied by 60 px so that when the dropdown is expanded, all swimlanes will be visible.
 
 ## Important Links
 
@@ -22,3 +28,9 @@ Swimlane custom work item control
 **REST clients**: https://learn.microsoft.com/en-us/javascript/api/azure-devops-extension-api/
 **Azure DevOps UI Components**: https://developer.microsoft.com/en-us/azure-devops/components
 **Hot Reload and Debug**: https://github.com/microsoft/azure-devops-extension-hot-reload-and-debug
+**REST API**: https://learn.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-7.2&preserve-view=true
+**TFX CLI**: https://github.com/microsoft/tfs-cli/blob/master/docs/extensions.md
+
+## Extension Page
+
+https://marketplace.visualstudio.com/items?itemName=nikki-yodo.nikyo-swimlane-extension

@@ -10,4 +10,10 @@ This will add Swimlane custom control on the work item, so we can change swimlan
 
 4. Click the inherited project, under Work item types tab, select the work item type and click on "Add custom control".
 
-5. It is best to put this control with space underneath it. Due to how the control is configured in Azure DevOps, this custom control requires around 180 px in height.
+5. If the list of swimlanes are not correct, please reload the window (see Limitations).
+
+## Limitations
+
+Since SDK.getPageContext() is not working very well, this extension will attempt to get team from route, but route is not updated when team is changed through drop down. A workaround is to reload the page.
+
+Extension is actually embedded as iframe, but that cause the control to be limited by the iframe height, so this extension will resize the iframe based on the number of swimlanes multiplied by 60 px so that when the dropdown is expanded, all swimlanes will be visible.
